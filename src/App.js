@@ -4,7 +4,13 @@ const App = () => {
   const [data,setData] = useState([{}]);
 
   useEffect(() => {
-    fetch("https://rdplines-backend2.onrender.com/members").then(
+    fetch("https://rdplines-backend2.onrender.com/members", 
+    {
+      mode: 'cors',
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    }).then(
       res => res.json()
     ).then(
       data => {

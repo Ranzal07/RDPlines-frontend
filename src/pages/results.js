@@ -93,7 +93,13 @@ const Results = () => {
 
   // receive the file from the flask server
   const handleDownload = async () => {
-    fetch("https://rdplines-backend2.onrender.com/download")
+    fetch("https://rdplines-backend2.onrender.com/download",
+    {
+      mode: 'cors',
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
       .then((response) => response.blob())
       .then((blob) => {
         // Use the file-saver package to trigger a download
