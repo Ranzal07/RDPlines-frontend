@@ -118,7 +118,7 @@ const Home = () => {
         setLoading(true);
 
         axios
-          .post("/https://rdplines-backend.onrender.com/api/simplify", formData)
+          .post("/http://0.0.0.0:10000/api/simplify", formData)
           .then((res) => {
             setLoading(false);
             context.setData(res.data);
@@ -151,7 +151,7 @@ const Home = () => {
     setLoading(true);
 
     axios
-      .post("/https://rdplines-backend.onrender.com/api/simplify", formData)
+      .post("/http://0.0.0.0:10000/api/simplify", formData)
       .then((res) => {
         setLoading(false);
         context.setData(res.data);
