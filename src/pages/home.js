@@ -119,11 +119,10 @@ const Home = () => {
 
         axios
           .post("https://rdplines-backend.onrender.com/api/simplify", {
-          baseURL: 'https://rdplines-backend.onrender.com',
-          withCredentials: true,
+          mode: 'cors',
           headers: {
             'Content-Type': 'application/json'
-          }
+          },
         }, formData)
           .then((res) => {
             setLoading(false);
@@ -158,11 +157,10 @@ const Home = () => {
 
     axios
       .post("https://rdplines-backend.onrender.com/api/simplify", {
-      baseURL: 'https://rdplines-backend.onrender.com',
-      withCredentials: true,
+      mode: 'cors',
       headers: {
         'Content-Type': 'application/json'
-      }
+      },
     },formData)
       .then((res) => {
         setLoading(false);
