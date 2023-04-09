@@ -4,7 +4,7 @@ const App = () => {
   const [data,setData] = useState([{}]);
 
   useEffect(() => {
-    fetch("https://rdplines-backend2.onrender.com/members", 
+    fetch("https://rdplines-backend.onrender.com/members", 
     {
       mode: 'cors',
       headers: {

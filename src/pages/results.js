@@ -93,7 +93,7 @@ const Results = () => {
 
   // receive the file from the flask server
   const handleDownload = async () => {
-    fetch("https://rdplines-backend2.onrender.com/download",
+    fetch("https://rdplines-backend.onrender.com/download",
     {
       mode: 'cors',
       headers: {

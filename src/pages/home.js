@@ -118,8 +118,8 @@ const Home = () => {
         setLoading(true);
 
         axios
-          .post("https://rdplines-backend2.onrender.com/api/simplify", {
-          baseURL: 'https://rdplines-backend2.onrender.com',
+          .post("https://rdplines-backend.onrender.com/api/simplify", {
+          baseURL: 'https://rdplines-backend.onrender.com',
           withCredentials: true,
           headers: {
             'Content-Type': 'application/json'
@@ -157,8 +157,8 @@ const Home = () => {
     setLoading(true);
 
     axios
-      .post("https://rdplines-backend2.onrender.com/api/simplify", {
-      baseURL: 'https://rdplines-backend2.onrender.com',
+      .post("https://rdplines-backend.onrender.com/api/simplify", {
+      baseURL: 'https://rdplines-backend.onrender.com',
       withCredentials: true,
       headers: {
         'Content-Type': 'application/json'
