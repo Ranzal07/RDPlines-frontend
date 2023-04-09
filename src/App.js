@@ -4,7 +4,7 @@ const App = () => {
   const [data,setData] = useState([{}]);
 
   useEffect(() => {
-    fetch("/https://rdplines-backend2.onrender.com/members").then(
+    fetch("/members").then(
       res => res.json()
     ).then(
       data => {
